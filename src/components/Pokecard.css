@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap);
+
+body {
+  margin: 0;
+  color: white;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#ff9966, #ff5e62);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.pokecard img{
+    width: 250px;
+}
+.pokecard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+    margin: 15px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 15px;
+    color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 25px;
+    line-height: 0.5;
+}
+.pokecard:hover{
+    size: 1.3;
+}
+ol{
+    margin: 0;
+    text-align: left;
+}
+.fairy{
+    background-image: linear-gradient(130deg, white, rgb(250, 174, 186));
+}
+.grass{
+    background-image: linear-gradient(130deg, white, rgb(92, 255, 92));
+}
+.normal{
+    background-image: linear-gradient(130deg, white,rgb(156, 156, 156));
+}
+.electric{
+    background-image: linear-gradient(130deg, white, rgb(206, 206, 0));
+}
+.rock{
+    background-image: linear-gradient(130deg, white, rgb(139, 112, 20));
+}
+.water{
+    background-image: linear-gradient(130deg, white, rgb(88, 169, 245));
+}
+.ghost{
+    background-image: linear-gradient(130deg, white, #7e4e93);
+}
+.poison{
+    background-image: linear-gradient(130deg, white, #a238f1);
+}
+.fire{
+    background-image: linear-gradient(130deg, white, rgb(255, 70, 14));
+}
+.ice{
+    background-image: linear-gradient(130deg, white, skyblue);
+}
+.bug{
+    background-image: linear-gradient(130deg, white, #0fe911);
+}
+.dark{
+    background-image: linear-gradient(130deg, white, #6a6a6a);
+}
+.steel{
+    background-image: linear-gradient(130deg, white, #b0b0b0);
+}
+.flying{
+    background-image: linear-gradient(130deg, white, #afaeda);
+}
+.fighting{    
+    background-image: linear-gradient(130deg, white, #d22323);
+}
+.dragon{
+    background-image: linear-gradient(130deg, white, #716cbb);
+}
+.ground{
+    background-image: linear-gradient(130deg, white, #ebc552);
+}
+.psychic{
+    background-image: linear-gradient(130deg, white, #f923ee);
+}
+@media only screen and (max-width: 600px) {
+    .pokecard img{
+        width: 200px;
+    }
+    .pokecard{ 
+        font-size: 15px;
+    }
+}
+
+.heading{
+    text-shadow: 5px 5px red;
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}
+.heading:hover{
+    transform: translateY(-7px);
+}
+
+input{
+    border: none;
+    outline-color: #ff5e62;
+    padding: 15px;
+    width: 300px;
+    font-size: 25px;
+    color: #ff5e62;
+    font-weight: bold;
+    background-color: white;
+}
+::-webkit-input-placeholder{
+    color: #ff5e62;
+}
+:-ms-input-placeholder{
+    color: #ff5e62;
+}
+::-ms-input-placeholder{
+    color: #ff5e62;
+}
+::placeholder{
+    color: #ff5e62;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+button{
+    margin: 15px;
+    background-color: white;
+    border: none;
+    padding: 12px;
+    color: #ff5e62;
+    font-weight: 800;
+    border-radius: 7%;
+}
+@-webkit-keyframes color_change{
+    0%{
+        background-color: white;
+        color:#ff5e62;
+    }
+    100% {
+        background-color: #ff5e62;
+        color: white;
+    }
+}
+@keyframes color_change{
+    0%{
+        background-color: white;
+        color:#ff5e62;
+    }
+    100% {
+        background-color: #ff5e62;
+        color: white;
+    }
+}
+button:hover{
+    -webkit-animation: forwards color_change 1s ease;
+            animation: forwards color_change 1s ease;
+}
+.footer-links{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover{
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+
+.App {
+  text-align: center;
+  font-family: Poppins;
+}
+
